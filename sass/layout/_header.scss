@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  &__logo {
+    position: absolute;
+    top: 21px;
+    left: 63px;
+    display: block;
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    background: #fff url(../img/logo.png) 50% calc(50% + 5px)/89px 77px no-repeat;
+    box-shadow: 0 0 150px 15px #b5c6e99e;
+  }
+
+}
+
+@media (max-width: $lg) {
+  .header {
+    &__logo {
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      &--main{
+        top: 5px;
+        width: 76px;
+        height: 80px;
+        border-radius: 0;
+        background-size: contain;
+        background-color: transparent;
+        box-shadow: none;
+      }
+    }
+  }
+}

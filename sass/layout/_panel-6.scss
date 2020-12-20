@@ -1,0 +1,392 @@
+.panel-6 {
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    top: 5%;
+    left: 290px;
+  }
+  .nav {
+    top: 50%;
+    left: 50px;
+    position: absolute;
+    transform: translateY(-50%);
+    right: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  img#shadow {
+    display: block;
+    width: 996px;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    z-index: 0;
+  }
+  img#panel6-dec1 {
+    display: block;
+    width: 873px;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    right: -290px;
+    z-index: 0;
+  }
+  img#panel6-dec2 {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .button {
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    bottom: 15%;
+    margin-left: -105px;
+  }
+  &__block-info {
+    position: absolute;
+    z-index: 10;
+    width: 330px;
+    h3 {
+      font-family: 'Pacifico';
+      font-size: 66px;
+      color: #013066;
+      margin-bottom: 10px;
+    }
+    &--parole {
+      left: 8%;
+      bottom: 15%;
+    }
+    &--baiser {
+      left: 40%;
+      top: 26%;
+      .panel-6__block-desc {
+        max-width: 280px;
+      }
+    }
+    &--force {
+      right: 8%;
+      bottom: 13%;
+      h3 {
+        line-height: .8;
+        margin-bottom: 40px;
+      }
+    }
+    &--degavu {
+      right: 12%;
+      top: 22%;
+    }
+  }
+  &__block-desc {
+    font-family: 'SFProText';
+    font-size: 17px;
+    font-weight: 500;
+    color: #013066;
+    max-width: 330px;
+    line-height: 1.6;
+  }
+  img#parole {
+    display: block;
+    width: 192px;
+    max-width: 100%;
+    z-index: 10;
+    position: relative;
+    left: 5px;
+  }
+  img#parole-b {
+    display: block;
+    width: 231px;
+    max-width: 100%;
+    position: absolute;
+    top: 104px;
+    left: -31px;
+    z-index: -1;
+  }
+
+  img#baiser {
+    display: block;
+    width: 237px;
+    max-width: 100%;
+    z-index: 10;
+    position: relative;
+    top: 18px;
+    left: 5px;
+  }
+  img#baiser-b {
+    display: block;
+    width: 258px;
+    max-width: 100%;
+    position: absolute;
+    top: 140px;
+    left: -31px;
+    z-index: -1;
+  }
+  img#force {
+    display: block;
+    width: 81px;
+    max-width: 100%;
+    position: absolute;
+    right: 60px;
+    top: -35px;
+  }
+  img#force-b {
+    display: block;
+    width: 258px;
+    max-width: 100%;
+    position: absolute;
+    top: -38px;
+    left: -46px;
+    z-index: -1;
+  }
+  img#degavu-1 {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    top: -135px;
+    left: -46px;
+    z-index: -1;
+  }
+  img#degavu-2 {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    top: -166px;
+    left: 91px;
+    z-index: -1;
+  }
+
+}
+
+@media (max-width: 1350px) {
+  .panel-6 {
+    &__block-info {
+      &--degavu {
+        right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $xl) {
+  .panel-6 {
+    overflow: hidden;
+    img#parole {
+      width: 160px;
+    }
+    img#parole-b {
+      width: 200px;
+      top: 50px;
+      left: -19px;
+    }
+    img#baiser {
+      min-width: 110px;
+      width: 180px;
+    }
+    img#baiser-b {
+      width: 200px;
+      top: 82px;
+      left: -10px;
+    }
+    img#force {
+      width: 66px;
+      right: 150px;
+      top: -68px;
+    }
+    img#force-b {
+      width: 200px;
+      left: -20px;
+    }
+    img#degavu-1 {
+      width: 100px;
+      left: -24px;
+    }
+    img#degavu-2 {
+      width: 100px;
+    }
+    &__block-info {
+      width: 330px;
+      h3 {
+        font-size: 42px;
+      }
+      &--baiser {
+        left: 36%;
+        top: 33%;
+      }
+      &--force {
+        right: 8%;
+        bottom: 25%;
+      }
+      &--degavu {
+        right: -3%;
+        top: 32%;
+      }
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .panel-6 {
+    &__info {
+      left: 50%;
+      transform: translateX(-50%) !important;
+      display: flex;
+      align-items: center;
+      top: 77px;
+      justify-content: flex-start;
+      height: calc(100% - 77px);
+      width: 100%;
+    }
+    .button {
+      margin-left: -32px;
+    }
+    img#force {
+      right: 70px;
+      top: -70px;
+    }
+    &__block-info {
+      width: 250px;
+      &--parole {
+        bottom: auto;
+        top: 25%;
+        left: 15%;
+      }
+      &--baiser {
+        top: auto;
+        bottom: 15%;
+        left: 15%;
+      }
+      &--force {
+        bottom: 15%;
+        right: 0%;
+      }
+      &--degavu {
+        top: 50%;
+        right: 0%;
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .panel-6 {
+    img#parole {
+      width: 140px;
+    }
+    img#parole-b {
+      width: 250px;
+    }
+    img#baiser {
+      width: 120px;
+    }
+    img#baiser-b {
+      width: 150px;
+      top: 66px;
+    }
+    img#force {
+      width: 55px;
+      right: 50px;
+      top: -70px;
+    }
+    img#force-b {
+      width: 150px;
+    }
+    img#degavu-1 {
+      width: 70px;
+      left: -18px;
+      top: -83px;
+    }
+    img#degavu-2 {
+      width: 70px;
+      left: 58px;
+      top: -104px;
+    }
+    &__block-info {
+      width: 150px;
+      h3 {
+        font-size: 36px;
+      }
+      &--parole {
+        left: 20%;
+        top: 30%;
+      }
+      &--baiser {
+        left: 20%;
+      }
+      &--force {
+        bottom: 15%;
+        right: 10%;
+      }
+      &--degavu {
+        right: 10%;
+        top: 47%;
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .panel-6 {
+    img#parole {
+      width: 95px;
+    }
+    img#parole-b {
+      width: 123px;
+    }
+    img#baiser {
+      width: 100px;
+      min-width: 100px;
+    }
+    img#baiser-b {
+      width: 124px;
+      top: 66px;
+    }
+    img#force{
+      top: -54px;
+      width: 45px;
+    }
+    img#force-b {
+      width: 130px;
+    }
+    img#degavu-1 {
+      width: 60px;
+      left: -18px;
+      top: -83px;
+    }
+    img#degavu-2 {
+      width: 60px;
+      left: 58px;
+      top: -104px;
+    }
+    &__block-info {
+      h3 {
+        font-size: 28px;
+      }
+      &--parole {
+        left: 15%;
+        top: 36%;
+      }
+      &--baiser {
+        left: 10%;
+      }
+      &--force {
+        bottom: 15%;
+        right: -10%;
+      }
+      &--degavu {
+        right: -10%;
+        top: 51%;
+        z-index: -2;
+      }
+    }
+  }
+}

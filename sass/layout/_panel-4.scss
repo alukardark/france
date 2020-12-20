@@ -1,0 +1,196 @@
+.panel-4{
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 140px;
+  }
+  .nav{
+    bottom: 100px;
+    left: 105px;
+
+    position: absolute;
+  }
+
+  img#panel-4{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+  img#panel4-dec1{
+    display: block;
+    width: 856px;
+    max-width: 100%;
+    position: absolute;
+    bottom: -70px;
+    right:  -120px;
+    z-index: 5;
+  }
+  img#flower-1{
+    display: block;
+    width: 199px;
+    max-width: 100%;
+    position: absolute;
+    top: 25%;
+    right: 26%;
+    z-index: 4;
+  }
+  img#flower-2{
+    display: block;
+    width: 208px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 5%;
+    right: 8%;
+    z-index: 6;
+  }
+  img#flamboise{
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    bottom: 6%;
+    right: 15%;
+    z-index: 5;
+    transform: rotate(5deg);
+  }
+  img#croissant{
+    display: block;
+    width: 452px;
+    max-width: 100%;
+    position: absolute;
+    top: 1%;
+    right: -6%;
+    z-index: 0;
+  }
+  img#cake{
+    display: block;
+    width: 114px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 30%;
+    left: 43%;
+    z-index: 4;
+  }
+  img#cakes{
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    position: absolute;
+    top: -5%;
+    left: 36%;
+    z-index: 10;
+  }
+  img#croissant-ico{
+    display: block;
+    width: 110px;
+    max-width: 100%;
+    position: absolute;
+    top: 21%;
+    right: 5%;
+    z-index: 10;
+  }
+  img#panel4-dec1-mobile {
+    display: none;
+  }
+  img#panel4-dec2-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: $xl) {
+  .panel-4 {
+    overflow: hidden;
+    img#cakes{
+      display: none;
+    }
+    img#croissant-ico{
+      display: none;
+    }
+    img#croissant{
+      max-width: 33%;
+    }
+    img#flower-2{
+      max-width: 15%;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .panel-4 {
+    &__info {
+      left: 50%;
+      transform: translateX(-50%) !important;
+      display: flex;
+      align-items: center;
+      top: 77px;
+      justify-content: flex-start;
+      height: calc(100% - 77px);
+      width: 100%;
+    }
+    img#panel4-dec1-mobile {
+      display: block;
+      width: 100%;
+    }
+    img#panel-4{
+      display: none;
+    }
+    img#panel4-dec1{
+      display: none;
+    }
+    img#flower-1{
+      display: none;
+    }
+    img#panel4-dec2-mobile {
+      display: block;
+      width: 100%;
+      max-width: 413px;
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -2;
+    }
+    img#flower-2{
+      min-width: 70px;
+      max-width: 18%;
+      bottom: 16%;
+      right: 22%;
+    }
+    img#croissant{
+      min-width: 200px;
+      max-width: 33%;
+      top: 50%;
+      right: auto;
+      left: 22%;
+    }
+    img#cake{
+      min-width: 70px;
+      max-width: 15%;
+      top: 50%;
+      left: auto;
+      right: 5%;
+      z-index: 0;
+    }
+    img#croissant-ico{
+      display: none;
+    }
+    img#flamboise {
+      z-index: 1;
+      min-width: 160px;
+      max-width: 25%;
+      right: 50%;
+      top: 60% !important;
+
+      transform: rotate(0) translate(50%, -50%) !important;
+    }
+  }
+}

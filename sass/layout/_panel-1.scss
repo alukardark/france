@@ -1,0 +1,250 @@
+.panel-1 {
+  overflow: hidden;
+  img#panel1-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../img/panel-1.jpg) center/cover no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+  }
+  img#listik {
+    display: block;
+    width: 76px;
+    max-width: 100%;
+
+    position: absolute;
+    top: 94px;
+    left: 365px;
+    z-index: 10;
+  }
+  img#listik-2 {
+    display: block;
+    width: 239px;
+    max-width: 100%;
+
+    position: absolute;
+    bottom: 102px;
+    left: 576px;
+    z-index: 10;
+  }
+  img#listik-3 {
+    display: block;
+    width: 63px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 300px;
+    right: 76px;
+    z-index: 10;
+  }
+  img#listik-4 {
+    display: block;
+    width: 79px;
+    max-width: 100%;
+
+    position: absolute;
+    bottom: 102px;
+    right: 276px;
+    z-index: 10;
+  }
+  img#panel1-dec1 {
+    display: block;
+    width: 592px;
+    max-width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  img#panel1-dec2 {
+    display: block;
+    width: 336px;
+    max-width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+  img#mill {
+    display: block;
+    width: 111px;
+    max-width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    z-index: 10;
+  }
+  img#panel1-dec1-mobile {
+    display: none;
+    width: 85%;
+    min-width: 340px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  img#panel1-dec2-mobile {
+    display: none;
+    width: 100%;
+    max-height: 431px;
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    z-index: 0;
+  }
+  &__france {
+    display: block;
+    background: url(../img/france.png) center/contain no-repeat;
+    width: 140px;
+    height: 145px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    margin-top: -35px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+  h1 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 1;
+    margin-bottom: 60px;
+  }
+  &__ocharovatelnaya {
+    font-family: "Pacifico";
+    font-size: 39px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  &__desc {
+    font-family: 'SFProText';
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+    color: #FFFFFF;
+    width: 615px;
+    margin-bottom: 90px;
+  }
+}
+
+@media (max-width: $xl) {
+  .panel-1 {
+    img#panel1-dec1 {
+      left: -12%;
+      top: -5%;
+    }
+    img#panel1-dec2 {
+      right: -5%;
+      bottom: -5%;
+    }
+  }
+
+}
+
+@media (max-width: $lg) {
+  .panel-1 {
+    h1 {
+      font-size: 70px;
+      line-height: .9;
+      margin-bottom: 30px;
+    }
+    &__ocharovatelnaya {
+      font-size: 30px;
+    }
+    &__info {
+      width: 100%;
+      padding: 0 30px;
+      margin-top: 0;
+    }
+    &__desc {
+      font-size: 19px;
+      width: 100%;
+      max-width: 600px;
+    }
+    img#panel1-dec1 {
+      left: -12%;
+      top: -40%;
+    }
+    img#panel1-dec2 {
+      right: -5%;
+      bottom: -15%;
+    }
+  }
+
+}
+
+@media (max-width: $md) {
+  .panel-1 {
+    img#listik {
+      display: none;
+    }
+    img#listik-2 {
+      display: none;
+    }
+    img#listik-3 {
+      display: none;
+    }
+    img#listik-4 {
+      display: none;
+    }
+    img#mill {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .panel-1 {
+    .nav {
+      display: flex !important;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 25px;
+    }
+    &__france {
+      width: 80px;
+      height: 75px;
+      margin-bottom: 8px;
+    }
+    &__ocharovatelnaya {
+      font-size: 23px;
+    }
+    &__desc {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 50px;
+    }
+    img#panel1-dec1-mobile {
+      display: block;
+    }
+    img#panel1-dec2-mobile {
+      display: block;
+    }
+    img#panel1-dec1 {
+      display: none;
+    }
+    img#panel1-dec2 {
+      display: none;
+    }
+
+  }
+}
+

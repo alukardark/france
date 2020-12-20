@@ -1,0 +1,50 @@
+.irs{
+  height: 2px;
+  width: calc(100% - 16px);
+  position: absolute;
+  left: 16px;
+  bottom: -2px;
+
+}
+.irs-line-left{
+  background: transparent;
+}
+.irs-bar{
+  height: 2px;
+  border: none;
+  background: #13b827;
+  top: 0px;
+  transition: .1s ease-in-out all;
+}
+.irs-line {
+  height: 2px;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  top: 0px;
+}
+.irs-bar-edge{
+  display: none;
+}
+.irs-slider{
+  top: -7px;
+  width: 20px;
+  height: 23px;
+  border: none;
+  transition: .1s ease-in-out all;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  box-shadow: none;
+  background: url(../img/irs-slider.png) center/contain no-repeat;
+}
+.irs-slider.state_hover, .irs-slider:hover {
+  background: url(../img/irs-slider.png) center/contain no-repeat;
+}
+.irs-from, .irs-to, .irs-single{
+  display: none;
+}
+.full-bar{
+  .irs-bar, .irs-slider{
+    background: #aeaeae;
+  }
+}

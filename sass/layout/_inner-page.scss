@@ -1,0 +1,1647 @@
+.inner-page {
+  padding: 75px 0 160px;
+  overflow: hidden;
+  position: relative;
+  &__nav-decor {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  &__road {
+    position: relative;
+    width: 100%;
+    height: 259px;
+    margin-top: 260px;
+    #like-a-man {
+      width: 416px;
+      height: 305px;
+      position: absolute;
+      left: -20%;
+      top: 20%;
+      z-index: -2;
+      background: url(../img/like-a-man.png) center/contain no-repeat;
+    }
+    #road-for-woman {
+      width: 293px;
+      height: 260px;
+      position: absolute;
+      right: 1%;
+      bottom: 0;
+      z-index: -2;
+      background: url(../img/road-for-woman.png) center/contain no-repeat;
+    }
+    #road-france-woman {
+      width: 293px;
+      height: 260px;
+      position: absolute;
+      right: 1%;
+      bottom: 9%;
+      z-index: -2;
+      background: url(../img/road-for-woman.png) center/contain no-repeat;
+    }
+    #yazyk-eto {
+      width: 232px;
+      height: 270px;
+      position: absolute;
+
+      z-index: -2;
+      background: url(../img/yazyk-eto.png) center/contain no-repeat;
+    }
+    #frantsuzskaya-kukhnya-man {
+      width: 430px;
+      height: 422px;
+      position: absolute;
+      right: -35%;
+      top: -56%;
+      z-index: -2;
+      background: url(../img/frantsuzskaya-kukhnya-man.png) center/contain no-repeat;
+    }
+    &--frantsuzskaya-kukhnya-man {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      .panel__title-decor {
+        font-size: 40px;
+      }
+    }
+    &--yazyk-eto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      .panel__title-decor {
+        font-size: 40px;
+      }
+    }
+    &--po-muzhski {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      h3 {
+        color: #fff;
+        margin-bottom: 5px !important;
+      }
+      .panel__title-blue {
+        font-size: 36px;
+        background-size: 298px 43px;
+        height: 40px;
+        width: auto;
+      }
+    }
+    &--frantsuzskaya-kukhnya {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      .panel__title-decor {
+        font-size: 40px;
+      }
+    }
+  }
+  &__road-img {
+    position: absolute;
+    min-width: 2586px;
+    width: 100%;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    pointer-events: none;
+  }
+  &__road-left {
+    position: relative;
+    width: 300px;
+    text-align: center;
+  }
+  &__road-right {
+    width: 300px;
+    position: relative;
+    text-align: center;
+  }
+  &__road-wrap {
+    max-width: 1130px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    a {
+      transition: .3s ease-in-out opacity;
+      &:hover {
+        opacity: .8;
+      }
+    }
+    h3 {
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+  &__nav {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    & > a {
+      transition: .4s ease-in-out border, .4s ease-in-out background;
+      &:before {
+        background: #fff !important;
+      }
+      &:after {
+        transition: .3s ease-in-out opacity, .3s ease-in-out background-image;
+      }
+      &:hover {
+        &:before {
+          background: #cce3ff !important;
+        }
+        &:after {
+          background-image: url(../img/arrow.png);
+        }
+      }
+    }
+
+    & > .nav__l {
+      margin-right: 226px !important;
+    }
+
+  }
+  h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 45px;
+    z-index: 10;
+    position: relative;
+  }
+  h2 {
+    font-family: 'Pacifico';
+    font-size: 66px;
+    color: #013066;
+    margin-bottom: 32px;
+    line-height: 1.1;
+  }
+  p {
+    font-family: SFProText;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.9;
+    color: #013066;
+    margin-bottom: 20px;
+    max-width: 460px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  &__desc {
+    font-family: 'SFProText';
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+    color: #013066;
+    font-weight: 500;
+    max-width: 915px;
+    margin-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 10;
+  }
+  &__img {
+    position: relative;
+  }
+  &__row {
+    margin-bottom: 130px;
+    position: relative;
+  }
+  &--zhenski {
+    h1 {
+      .panel__title {
+        margin-bottom: -10px;
+        z-index: 2;
+      }
+    }
+    .panel__title-orange {
+      margin-left: -32px;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+    .inner-page__row:nth-of-type(3) {
+      margin-bottom: 77px;
+    }
+    .inner-page__row:nth-of-type(4) {
+      margin-bottom: 290px;
+    }
+    .inner-page__row:nth-of-type(5) {
+      margin-bottom: -125px;
+    }
+    img#zhenski-decor {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+    img#zhenski-decor-2 {
+      position: absolute;
+      top: -22%;
+      left: -30%;
+      z-index: -3;
+    }
+    img#zhenski-decor-3 {
+      min-width: 1360px;
+      position: absolute;
+      top: 23.5%;
+      z-index: -3;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    img#apple {
+      position: absolute;
+      left: -10%;
+      top: -20%;
+    }
+    img#pomade {
+      position: absolute;
+      left: -16%;
+      bottom: -21%;
+    }
+    img#line-1 {
+      position: absolute;
+      right: 10%;
+      bottom: -5%;
+      z-index: -2;
+    }
+    img#line-2 {
+      position: absolute;
+      left: 0%;
+      top: -4%;
+      z-index: -2;
+    }
+    img#bouquet {
+      position: absolute;
+      right: 2%;
+      top: -1%;
+    }
+    img#perfume {
+      position: absolute;
+      left: -12%;
+      bottom: -6%;
+    }
+    img#perfume-bg {
+      position: absolute;
+      top: -4%;
+      left: 7%;
+      z-index: -1;
+    }
+    img#chernoye-platye-bg {
+      position: absolute;
+      bottom: -55%;
+      left: -4%;
+    }
+    img#chernoye-platye {
+      position: absolute;
+      top: 46%;
+      right: 0%;
+    }
+
+    img#chernoye-platye-bg-2 {
+      position: absolute;
+      top: 20%;
+      right: -60%;
+      z-index: -5;
+    }
+    img#listik-1 {
+      position: absolute;
+      top: 25%;
+      right: 10%;
+      z-index: 2;
+    }
+    img#listik-2 {
+      width: 134px;
+      position: absolute;
+      top: 38%;
+      right: 47%;
+      z-index: 2;
+      transform: rotateY(180deg) rotate(-56deg);
+    }
+    img#listik-3 {
+      position: absolute;
+      top: 62%;
+      right: 25%;
+      z-index: 2;
+    }
+    img#listik-4 {
+      position: absolute;
+      top: 69%;
+      right: 58%;
+      z-index: 2;
+    }
+    img#listik-5 {
+      width: 239px;
+      position: absolute;
+      top: 74%;
+      left: -15%;
+      z-index: 2;
+      transform: rotateY(180deg) rotate(-19deg);
+    }
+    img#listik-6 {
+      width: 100px;
+      position: absolute;
+      top: 90%;
+      right: 25%;
+      z-index: 2;
+      transform: rotateY(180deg) rotate(-19deg);
+    }
+    img#listik-7 {
+      width: 79px;
+      position: absolute;
+      top: 85%;
+      right: 30%;
+      z-index: 2;
+    }
+    img#listik-8 {
+      position: absolute;
+      top: 80%;
+      right: 50%;
+      z-index: 2;
+      transform: rotate(-120deg);
+    }
+    img#soap {
+      position: absolute;
+      top: 0%;
+      left: -17%;
+    }
+    img#zhenski-decor-5 {
+      position: absolute;
+      top: -27px;
+      left: -2%;
+    }
+    img#zhenski-decor-4 {
+      position: absolute;
+      top: 65%;
+      left: -210px;
+      z-index: -2;
+    }
+    img#zhenski-decor-6 {
+      position: absolute;
+      top: -2%;
+      right: 8%;
+    }
+
+  }
+  &--muzhski {
+    .inner-page__row:nth-of-type(2) {
+      margin-bottom: 185px;
+    }
+    .inner-page__row:nth-of-type(3) {
+      margin-bottom: 230px;
+    }
+    .inner-page__row:nth-of-type(4) {
+      margin-bottom: 150px;
+    }
+    .inner-page__desc {
+      max-width: 720px;
+    }
+    img#po-muzhski-decor {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+    img#po-muzhski-car {
+      max-width: 730px;
+      position: absolute;
+      bottom: -71px;
+      right: -70px;
+      z-index: 1;
+    }
+    img#nomernyye {
+      position: absolute;
+      bottom: 42px;
+      left: -109px;
+      z-index: 2;
+    }
+    img#po-muzhski-decor-2 {
+      position: absolute;
+      bottom: 0;
+      left: -27%;
+      z-index: -2;
+    }
+    img#po-muzhski-decor-3 {
+      width: 246px;
+      position: absolute;
+      top: 25%;
+      z-index: 3;
+      left: 0;
+    }
+    img#po-muzhski-decor-4 {
+      position: absolute;
+      right: -148%;
+      top: 19%;
+      z-index: -2;
+    }
+    img#circle {
+      position: absolute;
+      top: -6%;
+      left: -4%;
+      z-index: -2;
+    }
+    img#pentax {
+      position: absolute;
+      top: -39%;
+      left: -32%;
+      z-index: -3;
+    }
+    img#po-muzhski-decor-5 {
+      position: absolute;
+      top: -14%;
+      right: -1%;
+      z-index: 1;
+    }
+    img#cup {
+      position: absolute;
+      top: -34%;
+      right: 0%;
+      z-index: 2;
+    }
+    img#po-muzhski-decor-6 {
+      position: absolute;
+      top: 12%;
+      left: -154%;
+      z-index: -1;
+    }
+    img#po-muzhski-decor-7 {
+      position: absolute;
+      top: 14%;
+      right: -144%;
+      z-index: -1;
+    }
+    img#listik-1 {
+      width: 120px;
+      position: absolute;
+      top: 45%;
+      left: 17%;
+      z-index: 5;
+    }
+    img#listik-2 {
+      width: 112px;
+      position: absolute;
+      top: 87%;
+      left: 30%;
+      z-index: 5;
+    }
+    img#crystal {
+      position: absolute;
+      top: 46%;
+      right: 43%;
+      z-index: 5;
+    }
+    img#blurry {
+      position: absolute;
+      top: 44%;
+      right: 47%;
+      z-index: -5;
+    }
+    img#crystal-blurry {
+      position: absolute;
+      top: 80%;
+      left: 37%;
+      z-index: -5;
+    }
+
+  }
+
+  &--dlya-zhenshchin {
+    .inner-page__row:nth-of-type(2) {
+      margin-bottom: 185px;
+    }
+    .inner-page__row:nth-of-type(3) {
+      margin-bottom: 285px;
+    }
+    .inner-page__row:nth-of-type(4) {
+      margin-bottom: 370px;
+    }
+    .inner-page__row:nth-of-type(5) {
+      margin-bottom: -80px;
+    }
+    img#dlya-zhenshchin-decor {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+    img#dlya-zhenshchin-decor-2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -2;
+    }
+    img#croissant {
+      position: absolute;
+      bottom: -26%;
+      right: -12%;
+      z-index: 2;
+    }
+    img#dlya-zhenshchin-decor-3 {
+      position: absolute;
+      bottom: -29%;
+      right: -7%;
+      z-index: -3;
+    }
+    img#petal {
+      position: absolute;
+      top: 15%;
+      right: 7%;
+      z-index: -2;
+      transform: scale(0.8);
+    }
+    img#petal-vector {
+      position: absolute;
+      top: 14%;
+      right: 35%;
+      z-index: -2;
+    }
+    img#petal-2 {
+      position: absolute;
+      top: 28%;
+      left: 23%;
+      z-index: -2;
+    }
+    img#petal-3 {
+      position: absolute;
+      top: 58%;
+      left: 2%;
+      z-index: -2;
+      transform: rotateY(180deg) scale(0.8);
+    }
+    img#dlya-zhenshchin-figura-3 {
+      position: absolute;
+      top: 62%;
+      right: 41%;
+      z-index: -2;
+    }
+    img#dlya-zhenshchin-figura {
+      position: absolute;
+      top: 57%;
+      right: 0;
+      z-index: -2;
+    }
+    img#dlya-zhenshchin-decor-5 {
+      position: absolute;
+      top: 39%;
+      left: -17%;
+      z-index: -2;
+    }
+    img#flower {
+      position: absolute;
+      top: -16%;
+      left: -14%;
+      z-index: 2;
+      transform: rotate(29deg);
+    }
+    img#dlya-zhenshchin-decor-6 {
+      position: absolute;
+      top: -27%;
+      left: -23%;
+      z-index: 2;
+    }
+    img#burger {
+      position: absolute;
+      top: -18%;
+      left: -33%;
+      z-index: 3;
+    }
+    img#cakes {
+      position: absolute;
+      bottom: -35%;
+      right: 18%;
+      z-index: -3;
+      transform: rotate(28deg);
+    }
+    img#dlya-zhenshchin-figura-2 {
+      position: absolute;
+      bottom: -58%;
+      right: 9%;
+      z-index: -4;
+    }
+    img#dlya-zhenshchin-decor-4 {
+      min-width: 1342px;
+      position: absolute;
+      top: 15%;
+      z-index: -5;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    img#oyster {
+      position: absolute;
+      top: 26%;
+      z-index: 1;
+      left: -9%;
+    }
+    img#lemon {
+      position: absolute;
+      top: 14%;
+      z-index: 1;
+      right: 9%;
+    }
+    img#dlya-zhenshchin-decor-7 {
+      min-width: 1617px;
+
+      position: absolute;
+      top: 63%;
+      z-index: -5;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &--yazyk-eto {
+    .inner-page__text p {
+      max-width: 320px;
+    }
+    .inner-page__row:nth-of-type(2) {
+      margin-bottom: 100px;
+    }
+    .inner-page__row:nth-of-type(3) {
+      margin-bottom: 245px;
+    }
+    .inner-page__row:nth-of-type(4) {
+      margin-bottom: 206px;
+    }
+    .inner-page__row:nth-of-type(5) {
+      margin-bottom: 230px;
+    }
+    .inner-page__row:nth-of-type(6) {
+      margin-bottom: 166px;
+    }
+    .inner-page__row:nth-of-type(8) {
+      margin-bottom: 170px;
+    }
+    .inner-page__row:nth-of-type(9) {
+      margin-bottom: -100px;
+    }
+    .inner-page__desc {
+      max-width: 850px;
+    }
+    img#yazyk-eto-decor {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+    img#parole-big {
+      position: absolute;
+      top: -22%;
+      left: -21%;
+      z-index: 2;
+    }
+    img#numbers {
+      position: absolute;
+      bottom: -10%;
+      right: 2%;
+      z-index: 2;
+    }
+    img#yazyk-eto-figure-1 {
+      position: absolute;
+      top: 10%;
+      right: 44%;
+      z-index: 2;
+    }
+    img#yazyk-eto-figure-2 {
+      position: absolute;
+      top: 40%;
+      left: -9%;
+      z-index: 2;
+    }
+    img#yazyk-eto-figure-3 {
+      position: absolute;
+      bottom: 5%;
+      left: -2%;
+      z-index: 2;
+    }
+    img#yazyk-eto-figure-4 {
+      position: absolute;
+      bottom: -14%;
+      left: 28%;
+      z-index: 2;
+    }
+    img#zefirka {
+      position: absolute;
+      bottom: -21%;
+      left: 25%;
+      z-index: 2;
+    }
+    img#zefirka-2 {
+      position: absolute;
+      top: -14%;
+      right: -5%;
+      max-width: 150px;
+      z-index: 2;
+    }
+    img#yazyk-eto-decor-2 {
+      position: absolute;
+      top: -50%;
+      right: -31%;
+      z-index: -2;
+    }
+    img#yazyk-eto-decor-3 {
+      position: absolute;
+      top: 1%;
+      left: -11%;
+      z-index: -2;
+    }
+    img#cat-1 {
+      position: absolute;
+      bottom: -29%;
+      right: 3%;
+      z-index: 2;
+    }
+    img#cat-2 {
+      position: absolute;
+      bottom: -29%;
+      right: -25%;
+      z-index: 2;
+    }
+    img#dish {
+      position: absolute;
+      bottom: -25%;
+      right: 3%;
+      z-index: 3;
+    }
+    img#clouds {
+      position: absolute;
+      bottom: -47%;
+      right: -13%;
+      z-index: 2;
+    }
+    img#sky {
+      position: absolute;
+      bottom: -50%;
+      right: 6%;
+      z-index: -2;
+    }
+    img#petal {
+      position: absolute;
+      top: 57%;
+      left: 6%;
+      z-index: 2;
+    }
+    img#listik {
+      max-width: 145px;
+      position: absolute;
+      top: 800px;
+      right: 25%;
+      z-index: -5;
+    }
+    img#listik-2 {
+      position: absolute;
+      top: 2200px;
+      left: 44%;
+      z-index: 5;
+      transform: rotate(15deg);
+    }
+    img#listik-3 {
+      position: absolute;
+      top: 1500px;
+      right: 22%;
+      z-index: 5;
+      transform: rotateY(180deg);
+    }
+    img#yazyk-eto-decor-4 {
+      min-width: 1529px;
+      position: absolute;
+      top: -302px;
+      right: -247px;
+      z-index: -5;
+    }
+    img#like {
+      position: absolute;
+      bottom: 4%;
+      left: 8%;
+      z-index: 2;
+    }
+    img#like-b {
+      position: absolute;
+      bottom: -14%;
+      left: -2%;
+      z-index: 1;
+    }
+    img#yazyk-eto-decor-5 {
+      position: absolute;
+      bottom: -34%;
+      right: -30%;
+      z-index: 0;
+    }
+    img#yazyk-eto-decor-6 {
+      position: absolute;
+      bottom: -153%;
+      right: -53%;
+      z-index: -1;
+    }
+    img#shower {
+      position: absolute;
+      bottom: -12%;
+      right: 24%;
+      z-index: 1;
+    }
+    img#yazyk-eto-decor-7 {
+      min-width: 1747px;
+      position: absolute;
+      bottom: -27%;
+      right: -16%;
+      z-index: -5;
+    }
+    img#force-shadow {
+      position: absolute;
+      top: -31%;
+      left: 16%;
+      z-index: 1;
+    }
+  }
+  &--dlya-muzhchin {
+    .inner-page__row:nth-of-type(2) {
+      margin-bottom: 150px;
+    }
+    .inner-page__row:nth-of-type(3) {
+      margin-bottom: 300px;
+    }
+    .inner-page__row:nth-of-type(4) {
+      margin-bottom: 160px;
+    }
+    .inner-page__row:nth-of-type(5) {
+      margin-bottom: 370px;
+    }
+    .inner-page__desc {
+      max-width: 850px;
+    }
+
+    img#dlya-muzhchin-decor {
+      position: absolute;
+      top: 0;
+      margin: auto;
+      right: 0;
+      z-index: -5;
+    }
+    img#dlya-muzhchin-decor-2 {
+      position: absolute;
+      top: 0;
+      right: 12%;
+      z-index: -4;
+    }
+    img#dlya-muzhchin-decor-4 {
+      width: 324px;
+      position: absolute;
+      top: 25%;
+      z-index: -3;
+      left: 0;
+    }
+    img#dish-2 {
+      position: absolute;
+      top: 15%;
+      right: 2%;
+      z-index: 2;
+    }
+    img#dlya-muzhchin-decor-3 {
+      position: absolute;
+      top: 32%;
+      left: -32%;
+      z-index: -2;
+    }
+
+    img#frog {
+      position: absolute;
+      top: -10%;
+      z-index: 3;
+      left: -31%;
+    }
+    img#baget {
+      position: absolute;
+      top: -25%;
+      z-index: 3;
+      right: -24%;
+    }
+    img#xry {
+      position: absolute;
+      bottom: 12%;
+      z-index: 3;
+      right: 49%;
+    }
+    img#truffle {
+      position: absolute;
+      top: -38%;
+      z-index: 3;
+      right: 6%;
+    }
+    img#truffle-bg {
+      position: absolute;
+      top: -45%;
+      z-index: 3;
+      right: 12%;
+    }
+    img#truffle-2 {
+      position: absolute;
+      top: -24%;
+      z-index: 3;
+      right: 12%;
+    }
+    img#dlya-muzhchin-decor-5 {
+      position: absolute;
+      top: -51%;
+      z-index: -3;
+      left: -47%;
+    }
+    img#dish-3 {
+      position: absolute;
+      bottom: -32%;
+      z-index: 2;
+      left: -13%;
+    }
+    img#dlya-muzhchin-decor-6 {
+      position: absolute;
+      bottom: -44%;
+      z-index: 1;
+      left: -2%;
+    }
+    img#garnet {
+      position: absolute;
+      top: 12%;
+      z-index: -5;
+      right: 20%;
+    }
+    img#garnet-2 {
+      position: absolute;
+      top: 42%;
+      z-index: -1;
+      left: 16%;
+    }
+    img#cinnamon {
+      position: absolute;
+      top: 29%;
+      z-index: 5;
+      left: 45%;
+    }
+    img#cinnamon-2 {
+      position: absolute;
+      top: 70%;
+      z-index: 5;
+      left: 77%;
+    }
+    img#nut {
+      position: absolute;
+      top: 75%;
+      z-index: -1;
+      left: 39%;
+    }
+    img#nut-blur {
+      position: absolute;
+      top: 36%;
+      z-index: -1;
+      left: -2%;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .inner-page {
+    &__nav {
+      & > .nav__l {
+        margin-right: 200px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .inner-page {
+    padding: 180px 0 160px;
+    h1 {
+      .panel__title {
+        font-size: 65px;
+        line-height: 1;
+      }
+      .panel__title-decor {
+        font-size: 60px;
+        margin-bottom: 0;
+        margin-top: -5px;
+      }
+    }
+    &__nav-decor {
+      .inner-page__road-wrap {
+        h3 {
+          font-size: 32px;
+        }
+      }
+
+    }
+    .inner-page__road--po-muzhski {
+      .panel__title-blue {
+        font-size: 32px;
+      }
+    }
+    &__road--yazyk-eto .panel__title-decor {
+      font-size: 32px;
+    }
+    &__road {
+      margin-top: 260px;
+    }
+    &__road #yazyk-eto {
+      left: 10%;
+    }
+    &__road-img {
+      min-width: 1586px;
+      margin-top: 64px;
+    }
+    &__nav {
+      & > .nav__l {
+        margin-right: 90px !important;
+      }
+      & > a {
+        width: 55px;
+        height: 55px;
+        &:before {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    &__nav {
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      top: 100%;
+    }
+    &__road #like-a-man {
+      width: 350px;
+      height: 305px;
+      left: -5px;
+      top: 8%;
+    }
+
+    h2 {
+      font-size: 54px;
+      margin-bottom: 25px;
+    }
+    p {
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+    &__desc {
+      font-size: 18px;
+    }
+    h1 {
+      margin-bottom: 35px;
+      .panel__title-pink {
+        font-size: 56px;
+        width: 300px;
+      }
+      .panel__title-orange {
+        font-size: 56px;
+      }
+      .panel__title-blue {
+        font-size: 56px;
+        width: auto;
+        height: 77px;
+      }
+    }
+    &--zhenski .inner-page__row:nth-of-type(4) {
+      margin-bottom: 190px;
+    }
+    &--zhenski {
+      img#apple {
+        max-width: 70px;
+      }
+      img#pomade {
+        max-width: 50%;
+
+      }
+      img#bouquet {
+        max-width: 80%;
+      }
+      img#perfume {
+        max-width: 80%;
+      }
+      img#soap {
+        max-width: 80%;
+      }
+      img#zhenski-decor-6 {
+        right: -9%;
+      }
+      img#line-1 {
+        right: -4%;
+      }
+      img#line-2 {
+        left: -4%;
+      }
+      img#chernoye-platye {
+        max-width: 70%;
+      }
+      img#listik-1 {
+        max-width: 15%;
+      }
+      img#listik-2 {
+        max-width: 10%;
+      }
+      img#listik-3 {
+        max-width: 15%;
+      }
+      img#listik-5 {
+        max-width: 15%;
+      }
+      img#listik-6 {
+        max-width: 10%;
+      }
+      img#listik-8 {
+        max-width: 15%;
+      }
+    }
+    &--yazyk-eto {
+      img#parole-big {
+        max-width: 80%;
+      }
+      img#zefirka {
+        max-width: 50%;
+      }
+      img#zefirka-2 {
+        max-width: 30%;
+      }
+      img#cat-1 {
+        max-width: 40%;
+      }
+      img#cat-2 {
+        max-width: 40%;
+        bottom: -32%;
+      }
+      img#dish {
+        max-width: 70%;
+      }
+      img#like {
+        max-width: 20%;
+      }
+      img#like-b {
+        max-width: 40%;
+      }
+      img#shower {
+        max-width: 50%;
+      }
+      img#force-shadow {
+        max-width: 40%;
+      }
+      img#listik-3 {
+        margin-top: -150px;
+        max-width: 150px;
+      }
+      img#listik-2 {
+        max-width: 130px;
+      }
+      img#petal {
+        max-width: 120px;
+      }
+    }
+    &--dlya-zhenshchin .inner-page__row:nth-of-type(3) {
+      margin-bottom: 200px;
+    }
+    &--dlya-zhenshchin .inner-page__row:nth-of-type(4) {
+      margin-bottom: 200px;
+    }
+    &--dlya-zhenshchin {
+      img#croissant {
+        max-width: 70%;
+      }
+      img#dlya-zhenshchin-decor-3 {
+        max-width: 70%;
+      }
+      img#flower {
+        max-width: 50%;
+      }
+      img#burger {
+        max-width: 50%;
+      }
+      img#dlya-zhenshchin-decor-6 {
+        max-width: 40%;
+      }
+      img#oyster {
+        max-width: 80%;
+      }
+      img#lemon {
+        max-width: 50%;
+      }
+      img#cakes {
+        max-width: 60%;
+      }
+      img#dlya-zhenshchin-figura-3 {
+        max-width: 120px;
+      }
+    }
+    &--muzhski {
+      img#nomernyye {
+        max-width: 60%;
+      }
+      img#po-muzhski-car {
+        max-width: 600px;
+        right: -50px;
+      }
+      img#pentax {
+        max-width: 50%;
+      }
+      img#crystal {
+        max-width: 150px;
+      }
+      img#listik-1 {
+        max-width: 80px;
+        left: 14%;
+      }
+      img#cup {
+        max-width: 70%;
+      }
+      img#po-muzhski-decor-5 {
+        max-width: 80%;
+      }
+    }
+    #po-muzhski-text-3 {
+      margin-left: 15px;
+    }
+    &--muzhski .inner-page__row:nth-of-type(5) {
+      margin-bottom: -50px;
+    }
+    &--dlya-muzhchin .inner-page__row:nth-of-type(5) {
+      margin-bottom: 0px;
+    }
+
+    &--dlya-muzhchin {
+      img#dish-2 {
+        max-width: 60%;
+      }
+      img#garnet-2 {
+        display: none;
+      }
+      img#truffle {
+        max-width: 70%;
+      }
+      img#truffle-2 {
+        max-width: 100px;
+      }
+      img#dish-3 {
+        max-width: 80%;
+      }
+      img#dlya-muzhchin-decor-6 {
+        max-width: 80%;
+      }
+      img#nut {
+        max-width: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .inner-page {
+    padding: 180px 0 100px;
+    .inner-page__road-img {
+      display: none;
+    }
+    &__img {
+      max-width: 380px;
+    }
+    h1 .panel__title {
+      font-size: 54px;
+    }
+    #zhenski-text-1 {
+      padding-top: 35px;
+    }
+    &--zhenski {
+      img#pomade {
+        max-width: 50%;
+        bottom: -15%;
+      }
+      img#chernoye-platye {
+        display: none;
+      }
+      img#chernoye-platye-bg {
+        display: none;
+      }
+    }
+    &__nav-decor {
+      pointer-events: auto;
+    }
+    &__road #road-france-woman {
+      width: 240px;
+      height: 200px;
+      position: absolute;
+      right: 15%;
+      bottom: 9%;
+    }
+    &__road #road-for-woman {
+      width: 240px;
+      height: 200px;
+      position: absolute;
+      right: 15%;
+      bottom: 9%;
+    }
+    &__road-wrap {
+      .panel__title-decor {
+        font-size: 35px;
+      }
+    }
+
+    &__road #frantsuzskaya-kukhnya-man {
+      width: 330px;
+      height: 322px;
+      right: -15%;
+      top: -36%;
+    }
+    &__road #road-france-woman {
+      bottom: 21%;
+    }
+    &__road #yazyk-eto {
+      width: 210px;
+    }
+    &--yazyk-eto .inner-page__row:nth-of-type(3) {
+      margin-bottom: 130px;
+    }
+    &--yazyk-eto .inner-page__row:nth-of-type(4) {
+      margin-bottom: 130px;
+    }
+    &--yazyk-eto .inner-page__row:nth-of-type(5) {
+      margin-bottom: 130px;
+    }
+    #yazyk-eto-text-6 {
+      padding-top: 35px;
+    }
+    &--yazyk-eto {
+      img#parole-big {
+        max-width: 65%;
+      }
+      img#zefirka {
+        max-width: 45%;
+        bottom: -0%;
+        left: -17%;
+      }
+      img#listik-2 {
+        left: 60%;
+      }
+      img#dish {
+        right: -23%;
+      }
+      img#clouds {
+        display: none;
+      }
+      img#petal {
+        left: 80%;
+      }
+      img#like-b {
+        bottom: -6%;
+      }
+      #yazyk-eto-figure-1 {
+        display: none;
+      }
+      #yazyk-eto-figure-2 {
+        display: none;
+      }
+      #yazyk-eto-figure-3 {
+        display: none;
+      }
+      #yazyk-eto-figure-4 {
+        display: none;
+      }
+    }
+    &--dlya-zhenshchin .inner-page__row:nth-of-type(2) {
+      margin-bottom: 130px;
+    }
+    &--dlya-zhenshchin .inner-page__row:nth-of-type(3) {
+      margin-bottom: 130px;
+    }
+    &--dlya-zhenshchin .inner-page__row:nth-of-type(4) {
+      margin-bottom: 130px;
+    }
+    &--dlya-zhenshchin .inner-page__row:nth-of-type(5) {
+      margin-bottom: -120px;
+    }
+    &--dlya-zhenshchin {
+      img#dlya-zhenshchin-figura-3 {
+        display: none;
+      }
+      img#flower {
+        max-width: 40%;
+      }
+      img#dlya-zhenshchin-figura-2 {
+        display: none;
+      }
+      img#cakes {
+        display: none;
+      }
+      img#oyster {
+        max-width: 90%;
+      }
+      img#lemon {
+        max-width: 50%;
+      }
+      img#dlya-zhenshchin-decor-6 {
+        display: none;
+      }
+    }
+    &--muzhski .inner-page__row:nth-of-type(2) {
+      margin-bottom: 130px;
+    }
+    &--muzhski .inner-page__row:nth-of-type(4) {
+      margin-bottom: 50px;
+    }
+    &--muzhski .inner-page__row:nth-of-type(5) {
+      margin-bottom: -150px;
+    }
+    &--muzhski {
+      img#crystal {
+        display: none;
+      }
+      img#cup {
+        max-width: 60%;
+      }
+      img#po-muzhski-decor-5 {
+        max-width: 70%;
+      }
+    }
+    #dlya-muzhchin-text-3 {
+      padding-top: 25px;
+    }
+    #dlya-muzhchin-text-4 {
+      padding-top: 25px;
+    }
+    &--dlya-muzhchin .inner-page__row:nth-of-type(5) {
+      margin-bottom: -80px;
+    }
+    #po-muzhski-text-3 {
+      padding-top: 25px;
+    }
+    #po-muzhski-text-4 {
+      padding-top: 25px;
+    }
+    #zhenski-text-4 {
+      padding-top: 25px;
+    }
+    &--dlya-muzhchin {
+      img#dish-3 {
+        bottom: -20%;
+      }
+      img#dlya-muzhchin-decor-6 {
+        display: none;
+      }
+      img#truffle {
+        max-width: 60%;
+        top: -15%;
+      }
+
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .inner-page {
+    padding: 180px 0 100px;
+    &__text {
+      transform: none !important;
+    }
+    &__row {
+      margin-bottom: 60px;
+    }
+    h2 {
+      font-size: 42px;
+    }
+    h1 {
+      .panel__title {
+        font-size: 43px;
+      }
+      .panel__title-decor {
+        font-size: 40px;
+        text-align: center;
+      }
+      .panel__title-pink {
+        font-size: 43px;
+        width: 240px;
+        margin-bottom: -8px;
+      }
+      .panel__title-orange {
+        font-size: 43px;
+        width: 150px;
+        margin-top: -20px;
+        margin-left: 15px;
+      }
+      .panel__title-blue {
+        font-size: 35px;
+        height: 45px;
+        margin-top: 10px;
+      }
+    }
+    #po-muzhski-text-3 {
+      margin-left: 0;
+    }
+    #zhenski-text-4 {
+      padding-top: 25px;
+    }
+    &--muzhski .inner-page__row:nth-of-type(2) {
+      margin-bottom: 80px;
+    }
+    &--zhenski .inner-page__row:nth-of-type(4) {
+      margin-bottom: 120px;
+    }
+    &__road-wrap {
+      flex-direction: column;
+      justify-content: space-between;
+
+      align-items: center;
+    }
+    &__nav-decor .inner-page__road-wrap h3 {
+      color: #013066;
+    }
+    &__road-left {
+      margin-bottom: 60px;
+    }
+    &__road #like-a-man {
+      display: none;
+      top: auto;
+    }
+    &__nav {
+      display: none;
+    }
+    &__road #frantsuzskaya-kukhnya-man {
+      width: 339px;
+      height: 286px;
+      right: -9%;
+      top: -90%;
+    }
+    &__road #road-france-woman {
+      width: 240px;
+      height: 200px;
+      position: absolute;
+      right: 17%;
+      bottom: -25%;
+    }
+    &--yazyk-eto .inner-page__row:nth-of-type(6) {
+      margin-bottom: 100px;
+    }
+
+    &--dlya-muzhchin {
+      img#dish-3 {
+        bottom: -20%;
+      }
+      img#dlya-muzhchin-decor-6 {
+        display: none;
+      }
+      img#nut-blur {
+        display: none;
+      }
+      img#cinnamon-2 {
+        display: none;
+      }
+      img#nut {
+        display: none;
+      }
+    }
+    #zhenski-text-2 {
+      padding-top: 25px;
+    }
+    #dlya-muzhchin-text-2 {
+      padding-top: 25px;
+    }
+    &--yazyk-eto {
+      img#listik-2 {
+        display: none;
+      }
+      img#listik-3 {
+        display: none;
+      }
+    }
+    .inner-page__road {
+      height: 320px;
+    }
+
+    #po-muzhski-text-2 {
+      padding-top: 25px;
+    }
+
+    #dlya-zhenshchin-text-2 {
+      padding-top: 25px;
+    }
+    #dlya-zhenshchin-text-3 {
+      padding-top: 10px;
+    }
+    #dlya-zhenshchin-text-4 {
+      padding-top: 10px;
+    }
+    #yazyk-eto-text-2 {
+      padding-top: 20px;
+    }
+    #yazyk-eto-text-4 {
+      padding-top: 15px;
+    }
+    &--zhenski .inner-page__row:nth-of-type(5) {
+      margin-bottom: -50px;
+    }
+    &--muzhski .inner-page__row:nth-of-type(5) {
+      margin-bottom: -50px;
+    }
+  }
+}

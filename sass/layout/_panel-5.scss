@@ -1,0 +1,254 @@
+.panel-5 {
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 140px;
+  }
+  .nav {
+    bottom: 100px;
+    left: 105px;
+
+    position: absolute;
+  }
+
+  img#baget {
+    display: block;
+    width: 772px;
+    max-width: 100%;
+    position: absolute;
+    top: -70%;
+    left: 25%;
+    z-index: 0;
+  }
+  img#frog-ico {
+    display: block;
+    width: 117px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+    z-index: 10;
+  }
+  img#panel5-dec1 {
+    display: block;
+    width: 821px;
+    max-width: 100%;
+    position: absolute;
+    right: -270px;
+    bottom: -290px;
+    z-index: -1;
+  }
+  img#panel5-dec2 {
+    display: block;
+    width: 1215px;
+    max-width: 100%;
+    position: absolute;
+    right: -115px;
+    bottom: 0px;
+    z-index: -1;
+  }
+  img#cheese {
+    display: block;
+    width: 442px;
+    max-width: 100%;
+    position: absolute;
+    right: 3%;
+    top: -15%;
+    z-index: 0;
+  }
+  img#apelsin {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    right: 250px;
+    transform: rotate(-8deg) translateY(-50%);
+    z-index: 10;
+  }
+  img#nut {
+    display: block;
+    width: 92px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 27%;
+    right: 540px;
+    z-index: 11;
+  }
+  img#truffle {
+    display: block;
+    width: 207px;
+    max-width: 100%;
+    position: absolute;
+    top: 28%;
+    right: 461px;
+    z-index: 5;
+  }
+  img#cinnamon {
+    display: block;
+    width: 31px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 35%;
+    right: 15%;
+    z-index: 12;
+  }
+  img#cinnamon-3 {
+    display: block;
+    width: 21px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    z-index: 5;
+  }
+  img#cinnamon-2 {
+    display: block;
+    width: 21px;
+    max-width: 100%;
+    position: absolute;
+    top: 72%;
+    right: 795px;
+    z-index: 11;
+  }
+  img#garnet {
+    display: block;
+    width: 32px;
+    max-width: 100%;
+    position: absolute;
+    top: 6%;
+    right: 38%;
+    z-index: 5;
+  }
+  img#garnet-2 {
+    display: block;
+    width: 21px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 47%;
+    right: 12%;
+    z-index: 12;
+  }
+  img#corn {
+    display: block;
+    width: 13px;
+    max-width: 100%;
+    position: absolute;
+    top: 27%;
+    left: 34%;
+    z-index: 0;
+  }
+  img#panel5-dec1-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: $xl) {
+  .panel-5 {
+    overflow: hidden;
+    img#apelsin {
+      transform: rotate(9deg) translateY(-50%);
+      right: 100px;
+    }
+    img#cheese{
+      max-width: 400px;
+    }
+    img#truffle{
+      max-width: 150px;
+    }
+    img#baget{
+      width: 672px;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .panel-5 {
+    &__info {
+      left: 50%;
+      transform: translateX(-50%) !important;
+      display: flex;
+      align-items: center;
+      top: 77px;
+      justify-content: flex-start;
+      height: calc(100% - 77px);
+      width: 100%;
+    }
+    img#frog-ico {
+      display: none;
+    }
+    img#cinnamon {
+      display: none;
+    }
+    img#cinnamon-2 {
+      display: none;
+    }
+    img#cinnamon-3 {
+      display: none;
+    }
+    img#corn {
+      display: none;
+    }
+    img#garnet {
+      display: none;
+    }
+    img#garnet-2 {
+      display: none;
+    }
+    img#cheese {
+      min-width: 170px;
+      top: 45%;
+      right: 5%;
+      max-width: 25%;
+    }
+    img#baget {
+      min-width: 230px;
+      top: -20%;
+      left: auto;
+      right: -35%;
+      max-width: 25%;
+    }
+    img#truffle {
+      right: auto;
+      z-index: 0;
+      left: 20%;
+      top: 35%;
+      min-width: 96px;
+      max-width: 15%;
+    }
+    img#nut {
+      bottom: 35%;
+      right: auto;
+      left: 20% ;
+      min-width: 47px;
+      max-width: 8%;
+    }
+    img#panel5-dec1-mobile {
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      z-index: -5;
+    }
+    img#panel5-dec1 {
+      display: none;
+    }
+    img#panel5-dec2 {
+      display: none;
+    }
+    img#apelsin {
+      z-index: 1;
+      min-width: 160px;
+      max-width: 25%;
+      right: 50%;
+      top: 60% !important;
+      transform: rotate(0) translate(50%, -50%) !important;
+    }
+  }
+}

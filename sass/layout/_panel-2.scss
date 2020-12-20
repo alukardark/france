@@ -1,0 +1,214 @@
+.panel-2{
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 95px;
+  }
+  .nav{
+    bottom: 100px;
+    left: 105px;
+
+    position: absolute;
+  }
+
+  img#panel2-dec1 {
+    display: block;
+    width: 848px;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 0;
+  }
+  img#panel2-dec2 {
+    display: block;
+    width: 367px;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    z-index: -1;
+    transform: translateY(-50%);
+  }
+  img#panel2-dec3 {
+    display: block;
+    width: 517px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+  img#hat {
+    display: block;
+    width: 307px;
+    max-width: 100%;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    z-index: 0;
+  }
+  img#bag {
+    display: block;
+    width: 354px;
+    max-width: 100%;
+    position: absolute;
+    top: -102px;
+    left: 58%;
+    z-index: 0;
+  }
+  img#strawberry {
+    display: block;
+    width: 314px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 50px;
+    right: -85px;
+    z-index: 1;
+  }
+  img#klubnika-provansa {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    top: 58%;
+    right: 150px;
+    transform: rotate(9deg) translateY(-50%);
+    z-index: 1;
+  }
+  img#listik2-1 {
+    display: block;
+    width: 239px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 20px;
+    right: 20%;
+    z-index: 10;
+    transform: rotateY(180deg);
+  }
+  img#listik2-2 {
+    display: block;
+    width: 134px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+    z-index: 10;
+    transform: rotateY(180deg) rotate(-56deg);
+  }
+  img#listik2-3 {
+    display: block;
+    width: 79px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 40%;
+    transform: translateY(-50%);
+    left: 45%;
+    z-index: 10;
+  }
+  img#listik2-4 {
+    display: block;
+    width: 134px;
+    max-width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    z-index: 10;
+    transform: rotateY(180deg) rotate(-27deg);
+  }
+  img#listik2-5 {
+    display: block;
+    width: 63px;
+    max-width: 100%;
+    position: absolute;
+    top: 15px;
+    right: 15%;
+    z-index: 10;
+  }
+  img#panel2-dec-mobile {
+    display: none;
+  }
+  img#soap-modile {
+    display: none;
+  }
+}
+
+
+
+
+
+@media (max-width: $xl) {
+  .panel-2 {
+    overflow: hidden;
+    img#panel2-dec1{
+      display: none;
+    }
+    img#panel2-dec-mobile {
+      display: block;
+      width: 241px;
+      max-width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    img#soap-modile {
+      display: block;
+      mini-width: 250px;
+      max-width: 30%;
+      position: absolute;
+      top: 15%;
+      right: -15%;
+      z-index: 0;
+    }
+    img#strawberry{
+      min-width: 138px;
+      max-width: 20%;
+      right: -50px;
+    }
+    img#listik2-1{
+      display: none;
+    }
+    img#listik2-2{
+      display: none;
+    }
+    img#hat{
+      left: -10%;
+      top: 15%;
+      max-width: 20%;
+      min-width: 160px;
+    }
+    img#bag{
+      left: -10%;
+      top: 5%;
+      max-width: 25%;
+      min-width: 250px;
+    }
+  }
+}
+@media (max-width: $lg) {
+  .panel-2 {
+    &__info{
+      left: 50%;
+      transform: translateX(-50%) !important;
+      display: flex;
+      align-items: center;
+      top: 77px;
+      justify-content: flex-start;
+      height: calc(100% - 77px);
+    }
+    img#klubnika-provansa{
+      min-width: 160px;
+      max-width: 25%;
+      right: 50%;
+      top: 60% !important;
+      transform: rotate(0) translate(50% ,-50%) !important;
+    }
+
+  }
+}

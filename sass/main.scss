@@ -1,0 +1,64 @@
+@import 'vendors/module';
+@import 'abstracts/module';
+@import 'base/module';
+@import 'components/module';
+@import 'layout/module';
+@import 'themes/module';
+
+
+#pinContainer {
+  width: 100%;
+  height: 100vh !important;
+  overflow: hidden;
+  top: 0 !important;
+
+  //-webkit-perspective: 1000;
+  //  //perspective: 1000;
+}
+#slideContainer {
+  width: 700%; /* to contain 4 panels, each with 100% of window width */
+  height: 100%;
+  position: absolute;
+}
+
+.svg{
+  width: 550%;
+  height: auto ;
+  overflow: visible;
+  position: absolute;
+  top: 50%;
+  transform: translate( 0%, -50%);
+  left: 0;
+
+  &--mobile{
+    display: none;
+    top: auto;
+    bottom: 35px;
+  }
+}
+
+
+@media (max-width: $xl) {
+  .svg{
+    display: none;
+    &--mobile{
+      display: block;
+    }
+  }
+  #boy-mobile{
+    height: 100px;
+    width: 100px;
+  }
+}
+@media (max-width: $md) {
+  #boy-mobile{
+    height: 150px;
+    width: 150px;
+  }
+}
+@media (max-width: $sm) {
+  #boy-mobile{
+    height: 200px;
+    width: 200px;
+  }
+}

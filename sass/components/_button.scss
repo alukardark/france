@@ -1,0 +1,80 @@
+.button{
+  background: #013066;
+  border-radius: 30px;
+
+  font-family: 'SFProText';
+  width: 210px;
+  height: 62px;
+  font-size: 15px;
+  line-height: 30px;
+
+  text-align: center;
+  letter-spacing: 0.9375px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .2s ease-in-out background, .3s ease-in-out box-shadow;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  &:hover{
+    background: rgba(1, 48, 102, 0.85);
+    animation-play-state: running;
+  }
+  &:not(:hover){
+    animation-play-state: paused;
+  }
+}
+
+@media (max-width: $lg) {
+  .button{
+    &--more{
+      background: #013066;
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 7px 13px 0px rgba(1, 48, 102, 0.4);
+      width: 65px;
+      height: 65px;
+      font-size: 0;
+      transition: .3s ease-in-out border, .6s ease-in-out box-shadow;
+      position: absolute;
+      bottom: 15%;
+
+      &:after{
+        content: '';
+        background: #fff;
+        width: 17px;
+        height: 3px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:before{
+        content: '';
+        background: #fff;
+        height: 17px;
+        width: 3px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:hover {
+        border: 0px solid #FFFFFF;
+        -webkit-animation-name: none;
+        animation-name: none;
+        box-shadow: 0 10px 12px 0px transparent;
+      }
+    }
+  }
+}

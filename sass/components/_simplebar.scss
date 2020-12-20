@@ -1,0 +1,28 @@
+.simplebar-content {
+  padding-right: 22px !important;
+}
+
+.simplebar-scrollbar {
+  right: 0px;
+  width: 4px;
+}
+
+.simplebar-scrollbar:before {
+  background: #76797f;
+}
+
+.simplebar-track.simplebar-vertical {
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 4px;
+  background: #ececec;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  top: 0px;
+  bottom: 0px;
+  opacity: 1;
+}

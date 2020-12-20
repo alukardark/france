@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'SFProText';
+  src: url('../fonts/SFUIText-Regular.eot');
+  src: local('SF UI Text Regular'), local('SFUIText-Regular'),
+  url('../fonts/SFUIText-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SFUIText-Regular.woff') format('woff'),
+  url('../fonts/SFUIText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFProText';
+  src: url('../fonts/SFUIDisplay-Medium.eot');
+  src: local('SF UI Display Medium'), local('SFUIDisplay-Medium'),
+  url('../fonts/SFUIDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SFUIDisplay-Medium.woff') format('woff'),
+  url('../fonts/SFUIDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFProText';
+  src: url('../fonts/SFUIText-Semibold.eot');
+  src: local('SF UI Text Semibold'), local('SFUIText-Semibold'),
+  url('../fonts/SFUIDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SFUIDisplay-Semibold.woff') format('woff'),
+  url('../fonts/SFUIDisplay-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../fonts/Pacifico-Regular.eot');
+  src: url('../fonts/Pacifico-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Pacifico-Regular.woff') format('woff'),
+  url('../fonts/Pacifico-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/RobotoSlab-Bold.eot');
+  src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+  url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+

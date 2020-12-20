@@ -1,0 +1,60 @@
+.dots {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 46px;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    display: inline-block;
+    align-items: center;
+    margin-right: 27px;
+    width: 10px;
+    height: 10px;
+    background: #FFFFFF;
+    border: 2px solid transparent;
+    transition: .2s ease-in-out background, .2s ease-in-out border, .2s ease-in-out transform;
+    border-radius: 50%;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &.active {
+      pointer-events: none;
+    }
+    &.active, &:hover {
+      border: 2px solid #fff;
+      background: transparent;
+      transform: scale(1.5);
+    }
+  }
+  &.gray {
+    a {
+      background: #D8D8D8;
+      &.active, &:hover {
+        background: transparent;
+        border: 2px solid #013066;;
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .dots, .dots.gray {
+    a {
+      background: #013066;
+      width: 4px;
+      height: 4px;
+      margin-right: 14px;
+      transition: .2s ease-in-out width,.2s ease-in-out height,.2s ease-in-out background, .2s ease-in-out border, .2s ease-in-out transform;
+      &.active, &:hover {
+        width: 6px;
+        height: 6px;
+        border: 2px solid #013066;
+      }
+    }
+  }
+}
